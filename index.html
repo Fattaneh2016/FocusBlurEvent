@@ -1,15 +1,72 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(":header").css("background-color", "yellow");
+        });
+    </script>
+    <style>
+        p.myshadow {
+            text-shadow: 72pt 5em 0px #FF0000;
+        }
+
+
+        p.uppercase {
+            text-transform: uppercase;
+        }
+
+        p.lowercase {
+            text-transform: lowercase;
+        }
+
+        p.capitalize {
+            text-transform: capitalize;
+        }
+
+        .flex-container {
+            
+            display: flex;
+            width: 400px;
+            height: 250px;
+            background-color: lightgrey;
+        }
+
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Fattaneh
+    </h1>
+    <h2>Ameri</h2>
+
+    <div>
         <form id="myForm">
             <input type="text" id="myText">
         </form>
-        <script src="Script.js"></script>
-    </body>
+        <p class="myshadow"> here you are </p>
+    </div>
+    <p class="uppercase">This is some text.</p>
+    <p class="lowercase">This is some text.</p>
+    <p class="capitalize">This is some text.</p>
+
+
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
 </html>
